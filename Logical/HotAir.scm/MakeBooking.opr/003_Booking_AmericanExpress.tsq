@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1467997843188" createdUser="Administrator" id="512020b3:155cb73d71d:-7d63" type="test_resource" updatedTimestamp="1467997894220" updatedUser="Administrator" version="1.1">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig description="" name="">
+      <testTree>
+         <editableResource id="512020b3:155cb73d71d:-7e44" selfDescribing="Publish a message and wait for a response to be received.  This can then be validated accordingly." type="send_request_action" version="1.1">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig description="" formatter="EMS_JMS_Message" name="&quot;Text&quot; on destination &quot;hotair.booking&quot; using schema &quot;Text&quot; via &quot;EMS&quot;" transport="512020b3:155cb73d71d:-7ebb">
+               <headerMessage name="" type="12" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction enabled="false" type="1">
+                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+                  <_c meTy="Message" name="jmsHeaderFields" type="12" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction enabled="false" type="1">
+                           <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                     <_c meTy="String" name="JMSUseTemporary" type="7" value="false" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction type="0">
+                              <fieldAction exp="false" type="0"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                     </_c>
+                     <_c meTy="String" name="JMSDestination" type="7" value="hotair.booking" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction type="0">
+                              <fieldAction exp="hotair.booking" type="0"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                     </_c>
+                     <_c meTy="Integer" name="JMSDeliveryMode" type="2" value="2" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction type="0">
+                              <fieldAction exp="2" type="0"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                     </_c>
+                     <_c meTy="String" name="JMSPriority" type="7" value="0" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction type="0">
+                              <fieldAction exp="0" type="0"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                     </_c>
+                     <_c meTy="String" name="JMSTimeToLive" type="7" value="" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction type="0">
+                              <fieldAction type="0"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                     </_c>
+                     <_c meTy="String" name="JMSCorrelationID" type="7" value="" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction type="0">
+                              <fieldAction type="0"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                     </_c>
+                     <_c meTy="String" name="JMSMessageID" type="7" value="" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction type="0">
+                              <fieldAction type="0"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                     </_c>
+                     <_c meTy="String" name="JMSType" type="7" value="" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction type="0">
+                              <fieldAction type="0"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                     </_c>
+                     <_c meTy="String" name="JMSReply-To" type="7" value="hotair.booking.reply" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction type="0">
+                              <fieldAction exp="hotair.booking.reply" type="0"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                     </_c>
+                  </_c>
+                  <_c meTy="Message" name="messageProperties" type="12" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction enabled="false" type="1">
+                           <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+                  <_c meTy="String" name="MessageType" type="7" value="javax.jms.TextMessage" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction type="0">
+                           <fieldAction exp="javax.jms.TextMessage" type="0"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+               </headerMessage>
+               <bodyMessage assocdefid="Text" name="Text" sch="Text" type="12" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction enabled="false" type="1">
+                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+                  <_c coreTypeInt="7" coreTypeName="String" name="text" nodeFormatter="XML" sch="Text" type="12" version="1.2">
+                     <fieldExpander fieldExpanderID="XML_EXPANDER" fieldSchema="512020b3:155cb73d71d:-7e8b" fieldSchemaRoot="tns:bookFlightRequest">
+                        <property name="XML.cdata" value="false"/>
+                        <property name="XML.space" value="false"/>
+                        <property name="Multi-line indented" value="Multi-line indented"/>
+                        <property name="XML.encoding" value="UTF-8"/>
+                        <property name="XML.declaration" value="true"/>
+                        <property name="XML.nullvalues" value="false"/>
+                        <property name="XML.xmlFormat" value="Multi-line indented"/>
+                        <property name="XML.normalise" value="true"/>
+                     </fieldExpander>
+                     <contentTree>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;tns:bookFlightRequest xmlns:tns="http://www.hotair.com/schemas/BookFlightRequest"&gt;&#13;
+   &lt;tns:flightNumber&gt;A00137&lt;/tns:flightNumber&gt;&#13;
+   &lt;tns:weekNumber&gt;3&lt;/tns:weekNumber&gt;&#13;
+   &lt;tns:price&gt;300&lt;/tns:price&gt;&#13;
+   &lt;tns:passengerFirstName&gt;Raghu&lt;/tns:passengerFirstName&gt;&#13;
+   &lt;tns:passengerMiddleName&gt;Ram&lt;/tns:passengerMiddleName&gt;&#13;
+   &lt;tns:passengerLastName&gt;k&lt;/tns:passengerLastName&gt;&#13;
+   &lt;tns:passengerGender&gt;male&lt;/tns:passengerGender&gt;&#13;
+   &lt;tns:payment&gt;&#13;
+      &lt;payment:cardType xmlns:payment="http://www.hotair.com/schemas/Payment"&gt;americanexpress&lt;/payment:cardType&gt;&#13;
+      &lt;payment:cardNumber xmlns:payment="http://www.hotair.com/schemas/Payment"&gt;123456&lt;/payment:cardNumber&gt;&#13;
+      &lt;payment:cardSecurityCode xmlns:payment="http://www.hotair.com/schemas/Payment"&gt;123&lt;/payment:cardSecurityCode&gt;&#13;
+      &lt;payment:cardHoldersName xmlns:payment="http://www.hotair.com/schemas/Payment"&gt;raghuram&lt;/payment:cardHoldersName&gt;&#13;
+      &lt;payment:addressLine1 xmlns:payment="http://www.hotair.com/schemas/Payment"&gt;a&lt;/payment:addressLine1&gt;&#13;
+      &lt;payment:addressLine2 xmlns:payment="http://www.hotair.com/schemas/Payment"&gt;a&lt;/payment:addressLine2&gt;&#13;
+      &lt;payment:postcode xmlns:payment="http://www.hotair.com/schemas/Payment"&gt;123456&lt;/payment:postcode&gt;&#13;
+   &lt;/tns:payment&gt;&#13;
+&lt;/tns:bookFlightRequest&gt;<defaultActions>
+                           <defaultMessageActions>
+                              <fieldActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" matching="PREFERENCE" type="101"/>
+                                 </fieldAction>
+                                 <fieldAction type="0">
+                                    <fieldAction type="100"/>
+                                 </fieldAction>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="5"/>
+                                 </fieldAction>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="6"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                           </defaultMessageActions>
+                           <defaultScalarActions>
+                              <fieldActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="0"/>
+                                 </fieldAction>
+                                 <fieldAction type="0">
+                                    <fieldAction type="0"/>
+                                 </fieldAction>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="5"/>
+                                 </fieldAction>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="6"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                           </defaultScalarActions>
+                        </defaultActions>
+                        <updates>
+                           <updateField path="/text/tns:bookFlightRequest">
+                              <_c assocdefid="tns:bookFlightRequest"/>
+                           </updateField>
+                        </updates>
+                     </contentTree>
+                     <fieldActionGroup>
+                        <fieldAction type="0">
+                           <fieldAction type="4"/>
+                        </fieldAction>
+                        <fieldAction enabled="false" type="1">
+                           <fieldAction enabled="false" type="7"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+               </bodyMessage>
+            </resourceConfig>
+         </editableResource>
+         <editableResource id="512020b3:155cb73d71d:-7e40" selfDescribing="Receive and validate a response to the request you have sent." type="receive_reply_action" version="1.1">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig description="" formatter="EMS_JMS_Message" name="&quot;Text&quot; using schema &quot;Text&quot;" sendRequestID="512020b3:155cb73d71d:-7e44" transport="512020b3:155cb73d71d:-7ebb">
+               <headerMessage type="12" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction enabled="false" type="1">
+                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+                  <_c name="messageProperties" type="12" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction enabled="false" type="1">
+                           <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+               </headerMessage>
+               <subconfig MessageType="javax.jms.TextMessage" _version="1.1" formatter="EMS_JMS_Message" transport="512020b3:155cb73d71d:-7ebb"/>
+               <bodyMessage assocdefid="Text" name="Text" sch="Text" type="12" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction type="1">
+                        <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+                  <_c coreTypeInt="7" coreTypeName="String" name="text" nodeFormatter="XML" sch="Text" type="12" version="1.2">
+                     <fieldExpander fieldExpanderID="XML_EXPANDER" fieldSchema="512020b3:155cb73d71d:-7e82" fieldSchemaRoot="tns:bookFlightResponse">
+                        <property name="XML.cdata" value="false"/>
+                        <property name="XML.space" value="false"/>
+                        <property name="Multi-line indented" value="Multi-line indented"/>
+                        <property name="XML.encoding" value="UTF-8"/>
+                        <property name="XML.declaration" value="true"/>
+                        <property name="XML.nullvalues" value="false"/>
+                        <property name="XML.xmlFormat" value="Multi-line indented"/>
+                        <property name="XML.normalise" value="true"/>
+                     </fieldExpander>
+                     <contentTree>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ns0:bookFlightResponse xmlns:ns0="http://www.hotair.com/schemas/BookFlightResponse"&gt;&#13;
+   &lt;ns0:status&gt;Success&lt;/ns0:status&gt;&#13;
+   &lt;ns0:newReservationNumber&gt;A01031&lt;/ns0:newReservationNumber&gt;&#13;
+&lt;/ns0:bookFlightResponse&gt;<defaultActions>
+                           <defaultMessageActions>
+                              <fieldActionGroup>
+                                 <fieldAction type="1">
+                                    <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="false" matching="PREFERENCE" type="101"/>
+                                 </fieldAction>
+                                 <fieldAction type="1">
+                                    <fieldAction type="5"/>
+                                 </fieldAction>
+                                 <fieldAction type="1">
+                                    <fieldAction type="6"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                           </defaultMessageActions>
+                           <defaultScalarActions>
+                              <fieldActionGroup>
+                                 <fieldAction type="1">
+                                    <fieldAction type="0"/>
+                                 </fieldAction>
+                                 <fieldAction type="1">
+                                    <fieldAction type="5"/>
+                                 </fieldAction>
+                                 <fieldAction type="1">
+                                    <fieldAction type="6"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                           </defaultScalarActions>
+                        </defaultActions>
+                        <updates>
+                           <updateField path="/text/ns0:bookFlightResponse">
+                              <_c assocdefid="tns:bookFlightResponse"/>
+                           </updateField>
+                           <updateField path="/text/ns0:bookFlightResponse/xmlns:ns0">
+                              <_c value="http://www.hotair.com/schemas/BookFlightResponse"/>
+                           </updateField>
+                           <updateField path="/text/ns0:bookFlightResponse/ns0:status/{}">
+                              <_c value="Success"/>
+                           </updateField>
+                           <setAction index="0" path="/text/ns0:bookFlightResponse/ns0:newReservationNumber/{}" replaceActionType="0" replaceOuterType="1">
+                              <fieldAction enabled="false" type="1">
+                                 <fieldAction enabled="false" exp="A01031" type="0"/>
+                              </fieldAction>
+                           </setAction>
+                           <updateField path="/text/ns0:bookFlightResponse/ns0:newReservationNumber/{}">
+                              <_c value="A01031"/>
+                           </updateField>
+                        </updates>
+                     </contentTree>
+                     <fieldActionGroup>
+                        <fieldAction type="1">
+                           <fieldAction type="7"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+               </bodyMessage>
+            </resourceConfig>
+         </editableResource>
+      </testTree>
+      <tagDataStore inputMode="NONE" outputMode="NONE"/>
+   </resourceConfig>
+</editableResource>

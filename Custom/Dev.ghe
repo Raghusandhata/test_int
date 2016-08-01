@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1467997319962" createdUser="Administrator" id="512020b3:155cb73d71d:-7ec4" type="environment_resource" updatedTimestamp="1470058053693" updatedUser="admin" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig>
+      <environmentVariable evdescription="" key="EMS Password" value=""/>
+      <environmentVariable evdescription="" key="EmsURL" value=""/>
+      <environmentVariable evdescription="" key="EmsUser" value=""/>
+      <evbindings>
+         <evbinding evLogicalItemId="512020b3:155cb73d71d:-7ebb" evPhysicalItemId="512020b3:155cb73d71d:-7ea9"/>
+      </evbindings>
+   </resourceConfig>
+</editableResource>

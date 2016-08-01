@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1467997444446" createdUser="Administrator" id="512020b3:155cb73d71d:-7ea3" selfDescribing="TIBCO EMS [Non JNDI:tcp://localhost:7222] - TIBCO Enterprise Message Service (default)" type="probe_resource" updatedTimestamp="1467997444446" updatedUser="Administrator" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig defaultFlag="true" name="default" physicalResourceID="512020b3:155cb73d71d:-7ea9" probeID="ghviewer.plugin.ems">
+      <EMSDatasource configuration="default"/>
+   </resourceConfig>
+</editableResource>

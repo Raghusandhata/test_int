@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1467997342852" createdUser="Administrator" id="512020b3:155cb73d71d:-7ebe" type="operation_resource" updatedTimestamp="1467997555477" updatedUser="Administrator" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig avgTime="0" color="200,255,255" dependencies="512020b3:155cb73d71d:-7ebb,512020b3:155cb73d71d:-7e8b,512020b3:155cb73d71d:-7e82" invokeDynamicFormatterID="javax.jms.TextMessage" invokeFormatterID="EMS_JMS_Message" invokeTransportID="512020b3:155cb73d71d:-7ebb" maxTime="0" mepEndSchemaID="512020b3:155cb73d71d:-7e82" mepEndSchemaNodeFormatter="XML" mepEndSchemaroot="tns:bookFlightResponse" mepEndUsed="true" mepStartSchemaID="512020b3:155cb73d71d:-7e8b" mepStartSchemaNodeFormatter="XML" mepStartSchemaroot="tns:bookFlightRequest" mepType="IN_OUT" minTime="0" stubDynamicFormatterID="javax.jms.TextMessage" stubFormatterID="EMS_JMS_Message" stubTransportID="512020b3:155cb73d71d:-7ebb">
+      <invokeHeaderNode name="" type="12" version="1.2">
+         <fieldActionGroup>
+            <fieldAction enabled="false" type="1">
+               <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+            </fieldAction>
+         </fieldActionGroup>
+         <_c meTy="Message" name="jmsHeaderFields" type="12" version="1.2">
+            <fieldActionGroup>
+               <fieldAction enabled="false" type="1">
+                  <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+               </fieldAction>
+            </fieldActionGroup>
+            <_c meTy="String" name="JMSUseTemporary" type="7" value="false" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="false" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="String" name="JMSDestination" type="7" value="hotair.booking" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="hotair.booking" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="Integer" name="JMSDeliveryMode" type="2" value="2" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="2" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="String" name="JMSPriority" type="7" value="0" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="0" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="String" name="JMSTimeToLive" type="7" value="" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="String" name="JMSCorrelationID" type="7" value="" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="String" name="JMSMessageID" type="7" value="" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="String" name="JMSType" type="7" value="" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="String" name="JMSReply-To" type="7" value="hotair.booking.reply" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="hotair.booking.reply" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+         </_c>
+         <_c meTy="Message" name="messageProperties" type="12" version="1.2">
+            <fieldActionGroup>
+               <fieldAction enabled="false" type="1">
+                  <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+         <_c meTy="String" name="MessageType" type="7" value="javax.jms.TextMessage" version="1.2">
+            <fieldActionGroup>
+               <fieldAction type="0">
+                  <fieldAction exp="javax.jms.TextMessage" type="0"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+      </invokeHeaderNode>
+      <stubHeaderConfig>
+         <_c JMSDestination="hotair.booking" MessageType="javax.jms.TextMessage" messageSelector="" watchParticipate="Participate"/>
+      </stubHeaderConfig>
+   </resourceConfig>
+</editableResource>

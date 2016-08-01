@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><_c buildID="I20131216_1237" comments="Project created on July 8, 2016" creationVersion="8.5.1" domain="default" extDocPrefix="" name="HotAir_Test_Project" owner="Administrator" rulesCacheUri="%%PROJECT/ROOT%%Rules" uuid="00000155-cb75-17cb-0003-71cd93fc03ac">
+   <rootEnvironmentConfig>
+      <environmentVariable evdescription="" key="EMS Password" value=""/>
+      <environmentVariable evdescription="" key="EmsURL" value=""/>
+      <environmentVariable evdescription="" key="EmsUser" value=""/>
+   </rootEnvironmentConfig>
+   <dateTimeConfig date="yyyy/MM/dd" dateTime="dd-MMM-yyyy HH:mm:ss" time="HH:mm:ss.SSS"/>
+   <serverSettings ghRepositoryURL="http://localhost:7819/RTCP">
+      <dbConnectionParameters maxConnections="1" poolName="DefaultPoolName">
+         <connectionParams CICSEnv="false" MVSEnv="false" ZOSEnv="false" driverClass="com.mysql.jdbc.Driver" password="#com.ghc.1!b1e040E1211A7E1E12944AC3" url="jdbc:mysql://localhost:3306/RIT" user="root">
+            <stubSettings maxProcCallCount="10000" maxResultSetRowCount="10000" maxRowCount="10000" password="#com.ghc.1!0b31" procedureLearningBehaviour="1" schema="" url="" useIntegratedDB="true" user=""/>
+            <storedProcedureFilter catalogFilterEnabled="false" catalogFilterPattern="" procedureFilterEnabled="false" procedureFilterPattern="" schemaFilterEnabled="true" schemaFilterPattern="root" storedProceduresRetrievalEnabled="false" useConnectionUsername="true"/>
+            <timestampFormatting timestampFormatZero="false" timestampFormattingEnabled="false" timestampPrecision="9"/>
+         </connectionParams>
+      </dbConnectionParameters>
+   </serverSettings>
+   <permissionsSettings autoLogin="true" host="192.168.1.4" permFactId="ldap.permissions.factory.none" port="389" pswd="2jmj7l5rSw0yVb/vlWAYkK/YBwk="/>
+   <resultPublishers disableAll="false">
+      <publisher enabled="true" location="%%PROJECT/ROOT_DIRECTORY%%" name="Result_PDF" type="FILE"/>
+   </resultPublishers>
+</_c>
