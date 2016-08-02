@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1467997576649" createdUser="Administrator" id="512020b3:155cb73d71d:-7e46" type="test_resource" updatedTimestamp="1467997771563" updatedUser="Administrator" version="1.1">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1467997576649" createdUser="Administrator" id="512020b3:155cb73d71d:-7e46" type="test_resource" updatedTimestamp="1470135402648" updatedUser="admin" version="1.1">
    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
    <resourceConfig description="" name="">
       <testTree>
@@ -45,10 +45,10 @@
                            </fieldAction>
                         </fieldActionGroup>
                      </_c>
-                     <_c meTy="String" name="JMSTimeToLive" type="7" value="" version="1.2">
+                     <_c meTy="String" name="JMSTimeToLive" type="7" value="500" version="1.2">
                         <fieldActionGroup>
                            <fieldAction type="0">
-                              <fieldAction type="0"/>
+                              <fieldAction exp="500" type="0"/>
                            </fieldAction>
                         </fieldActionGroup>
                      </_c>
@@ -103,7 +103,7 @@
                      </fieldAction>
                   </fieldActionGroup>
                   <_c coreTypeInt="7" coreTypeName="String" name="text" nodeFormatter="XML" sch="Text" type="12" version="1.2">
-                     <fieldExpander fieldExpanderID="XML_EXPANDER" fieldSchema="512020b3:155cb73d71d:-7e8b" fieldSchemaRoot="tns:bookFlightRequest">
+                     <fieldExpander fieldExpanderID="XML_EXPANDER" fieldSchema="XML" fieldSchemaRoot="xml.Element">
                         <property name="XML.cdata" value="false"/>
                         <property name="XML.space" value="false"/>
                         <property name="Multi-line indented" value="Multi-line indented"/>
@@ -143,7 +143,7 @@
                                     <fieldAction enabled="false" type="5"/>
                                  </fieldAction>
                                  <fieldAction enabled="false" type="1">
-                                    <fieldAction enabled="false" type="6"/>
+                                    <fieldAction enabled="false" type="6" typeActionAllType="true" typeActionMetaType="false"/>
                                  </fieldAction>
                               </fieldActionGroup>
                            </defaultMessageActions>
@@ -159,14 +159,14 @@
                                     <fieldAction enabled="false" type="5"/>
                                  </fieldAction>
                                  <fieldAction enabled="false" type="1">
-                                    <fieldAction enabled="false" type="6"/>
+                                    <fieldAction enabled="false" type="6" typeActionAllType="true" typeActionMetaType="false"/>
                                  </fieldAction>
                               </fieldActionGroup>
                            </defaultScalarActions>
                         </defaultActions>
                         <updates>
                            <updateField path="/text/tns:bookFlightRequest">
-                              <_c assocdefid="tns:bookFlightRequest"/>
+                              <_c assocdefid="xml.Element"/>
                            </updateField>
                         </updates>
                      </contentTree>
@@ -207,7 +207,7 @@
                      </fieldAction>
                   </fieldActionGroup>
                   <_c coreTypeInt="7" coreTypeName="String" name="text" nodeFormatter="XML" sch="Text" type="12" version="1.2">
-                     <fieldExpander fieldExpanderID="XML_EXPANDER" fieldSchema="512020b3:155cb73d71d:-7e82" fieldSchemaRoot="tns:bookFlightResponse">
+                     <fieldExpander fieldExpanderID="XML_EXPANDER" fieldSchema="XML" fieldSchemaRoot="xml.Element">
                         <property name="XML.cdata" value="false"/>
                         <property name="XML.space" value="false"/>
                         <property name="Multi-line indented" value="Multi-line indented"/>
@@ -230,7 +230,7 @@
                                     <fieldAction type="5"/>
                                  </fieldAction>
                                  <fieldAction type="1">
-                                    <fieldAction type="6"/>
+                                    <fieldAction type="6" typeActionAllType="true" typeActionMetaType="false"/>
                                  </fieldAction>
                               </fieldActionGroup>
                            </defaultMessageActions>
@@ -243,7 +243,7 @@
                                     <fieldAction type="5"/>
                                  </fieldAction>
                                  <fieldAction type="1">
-                                    <fieldAction type="6"/>
+                                    <fieldAction type="6" typeActionAllType="true" typeActionMetaType="false"/>
                                  </fieldAction>
                               </fieldActionGroup>
                            </defaultScalarActions>
@@ -279,5 +279,6 @@
          </editableResource>
       </testTree>
       <tagDataStore inputMode="NONE" outputMode="NONE"/>
+      <testprops messageClearance="false"/>
    </resourceConfig>
 </editableResource>
