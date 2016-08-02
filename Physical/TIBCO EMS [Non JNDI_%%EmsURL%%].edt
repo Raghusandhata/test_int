@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1467997444321" createdUser="Administrator" id="512020b3:155cb73d71d:-7ea9" selfDescribing="TIBCO EMS [Non JNDI:%%EmsURL%%]" type="ems_destination_transport" updatedTimestamp="1470140839587" updatedUser="admin" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig transportName="" transportTemplateName="TIBCO EMS">
+      <_c JNDICredentialsType="usernamePassword" JNDIPassword="#com.ghc.1!f401" JNDIUser="" OriginalConnectionPassword="#com.ghc.1!3b01" OriginalConnectionUser="" Password="#com.ghc.1!940b" ReuseJNDIAuthentication="true" User="" cf="" clientID="" connectionCredentialsType="usernamePassword" correlationIdMatchesRequestToResponse="false" icf="com.tibco.tibjms.naming.TibjmsInitialContextFactory" messageIdMatchesRequestToResponse="false" recordingMode="DIRECT" serverURL="" stubMode="DIRECT" url="tibjmsnaming://localhost:7222" useJNDIDestination="true">
+         <initialContextProperties/>
+         <directConnection active="true" brokerURL="%%EmsURL%%" connectionFactory="com.tibco.tibjms.TibjmsQueueConnectionFactory" directCredentialsType="usernamePassword" password="%%EMS Password%%" userName="%%EmsUser%%"/>
+         <watchCredentials connectionFactory="" useDefaultFactory="true" useSame="true"/>
+         <sessionSettings reuseConsumerSession="false"/>
+      </_c>
+   </resourceConfig>
+</editableResource>

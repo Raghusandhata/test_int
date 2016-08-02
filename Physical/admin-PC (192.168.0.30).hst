@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1469954900367" createdUser="admin" id="47d56b6b:15640237461:-7e88" selfDescribing="admin-PC (192.168.0.30)" type="host_machine_resource" updatedTimestamp="1469954900367" updatedUser="admin" version="1.0">
-   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-   <resourceConfig host_address="192.168.0.30" user_host_name="admin-PC"/>
-</editableResource>
