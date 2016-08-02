@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1467997786610" createdUser="Administrator" id="512020b3:155cb73d71d:-7dd5" type="test_resource" updatedTimestamp="1470135414711" updatedUser="admin" version="1.1">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1467997786610" createdUser="Administrator" id="512020b3:155cb73d71d:-7dd5" type="test_resource" updatedTimestamp="1470149015224" updatedUser="admin" version="1.1">
    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
    <resourceConfig description="" name="">
       <testTree>
@@ -45,10 +45,10 @@
                            </fieldAction>
                         </fieldActionGroup>
                      </_c>
-                     <_c meTy="String" name="JMSTimeToLive" type="7" value="500" version="1.2">
+                     <_c meTy="String" name="JMSTimeToLive" type="7" value="" version="1.2">
                         <fieldActionGroup>
                            <fieldAction type="0">
-                              <fieldAction exp="500" type="0"/>
+                              <fieldAction type="0"/>
                            </fieldAction>
                         </fieldActionGroup>
                      </_c>
